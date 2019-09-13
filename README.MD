@@ -25,4 +25,4 @@ However, when I fetch each video, I also want to know if the user has already wa
 
 **What is the proper way to include that pivot data on the nested relation `video` within `current_series.video`?**
 
-Note that I'm not fetching the videos through the pivot table because the `current_series.videos` should be returning all videos in the series, regardless of if a user has watched them or not.
+Note that I'm not fetching the videos through the pivot table because the `current_series.videos` should be returning all videos in the series, regardless of if a user has watched them or not, so I can't use `withPivot` like I am on `User::first()->videos_watched` 

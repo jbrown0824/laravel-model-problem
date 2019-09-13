@@ -1,5 +1,20 @@
 ### Laravel Model Relationship Problem
 
+## Install
+
+    git@github.com:jbrown0824/laravel-model-problem.git
+    cd laravel-model-problem
+    composer install
+    
+    # important: Update database env settings before runing this command
+    php artisan migrate --seed
+    
+    php artisan serve
+    
+Navigate to [localhost:8000/series]() (replace 8000 with the port the command tells you)
+    
+## The problem
+
 Pretend this is a video series app (kind of like Laracasts). There are seriess of videos that users can watch.
 
 But there's a catch: Users can only watch one series at a time. So there's a `current_series_id` on the users table.
